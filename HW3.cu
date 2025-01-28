@@ -180,6 +180,9 @@ int main()
 	
 	// Copy Memory from GPU to CPU	
 	cudaMemcpyAsync(C_CPU, C_GPU, N*sizeof(float), cudaMemcpyDeviceToHost);
+
+	// Making sure the GPU and CPU wiat until each other are at the same place.
+	cudaDeviceSynchronize(void);
 	
 	gettimeofday(&end, NULL);
 	timeGPU = elaspedTime(start, end);
