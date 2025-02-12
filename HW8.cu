@@ -15,7 +15,7 @@
 #include <stdio.h>
 
 // Defines
-#define N 2000 // Length of the vector
+#define N 823 // Length of the vector
 
 // Global variables
 float *A_CPU, *B_CPU, *C_CPU; //CPU pointers
@@ -53,7 +53,7 @@ void cudaErrorCheck(const char *file, int line)
 // This will be the layout of the parallel space we will be using.
 void setUpDevices()
 {
-	BlockSize.x = 256;
+	BlockSize.x = 1000;
 	BlockSize.y = 1;
 	BlockSize.z = 1;
 	
