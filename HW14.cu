@@ -11,7 +11,6 @@
 // Include files
 #include <sys/time.h>
 #include <stdio.h>
-#include "./MyCuda.h"
 
 // Defines
 #define SIZE 2000000 
