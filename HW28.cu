@@ -30,7 +30,7 @@ int main(int, char**);
  Hence there is no middle interger so RAND_MAX/2 will divide the number in half if it is a float.
  You might could do this faster with a clever idea using ints but I'm going to use a float.
  Also I'm not sure how long the string of random numbers is. I'm sure it is longer than 10,000.
- Before you use this a a huge string check this out.
+ Before you use this as a huge string check this out.
 */
 int getRandomDirection()
 {	
